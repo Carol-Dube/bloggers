@@ -9,12 +9,12 @@ import { TestComponent } from './components/test/test.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   // {path:'login',component: LoginComponent},
-  { path: 'test', component: TestComponent },
+  { path: 'test', component: LoginComponent },
   { path: '', component: LoginComponent },
   
   // default route
   { path: '', redirectTo: '/login', pathMatch: 'full' },
-  { path: '**', component: TestComponent }
+  { path: '**', component: LoginComponent }
 ];
 
 @NgModule({
